@@ -9,6 +9,10 @@ namespace PlaneFall.Classes.Users.UserTypes.UserAccesType
 {
     class Admin : AutorizationUser
     {
+        public Admin(int id, string name, string login, string passwordHash) : base(id, name, login, passwordHash)
+        {
+        }
+
         public override Form GetMainForm()
         {
             throw new NotImplementedException();
