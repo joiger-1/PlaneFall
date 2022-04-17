@@ -11,7 +11,10 @@ namespace PlaneFall.Classes.Users
     class Users
     {
         private static List<User> _users;
-
+        public static User Guest
+        {
+            get => new Guest();
+        }
         static Users()
         {
             _users = new List<User>();
