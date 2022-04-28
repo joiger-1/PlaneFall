@@ -65,6 +65,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Logic\Country.cs" />
     <Compile Include="Classes\Other\Database.cs" />
     <Compile Include="Classes\Users\User.cs" />
     <Compile Include="Classes\Users\UserAdapter.cs" />
