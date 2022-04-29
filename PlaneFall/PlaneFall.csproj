@@ -65,8 +65,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Logic\Country.cs" />
+    <Compile Include="Classes\Logic\Location\Airport.cs" />
+    <Compile Include="Classes\Logic\Location\City.cs" />
+    <Compile Include="Classes\Logic\Location\Country.cs" />
     <Compile Include="Classes\Other\Database.cs" />
+    <Compile Include="Classes\Other\Repository.cs" />
     <Compile Include="Classes\Users\User.cs" />
     <Compile Include="Classes\Users\UserAdapter.cs" />
     <Compile Include="Classes\Users\Users.cs" />
