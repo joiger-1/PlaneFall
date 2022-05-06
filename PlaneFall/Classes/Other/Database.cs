@@ -10,7 +10,7 @@ namespace PlaneFall.Classes.Other
 {
     static class Database
     {
-        private static string _connStr;
+        static private string _connStr;
 
         public static object[][] GetTable(string tableName)
         {
