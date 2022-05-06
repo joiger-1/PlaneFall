@@ -2,15 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PlaneFall.Classes.Logic.Location
 {
     class Airport
     {
         public static List<Airport> Airports { get; private set; }
-        public City Country { get; private set; }
+        public City City { get; private set; }
 
         public int Id { get; private set; }
         public string Name { get; private set; }
@@ -30,21 +28,21 @@ namespace PlaneFall.Classes.Logic.Location
         {
             Id = id;
             Name = name;
-            Country = City.GetById(countryId);
+            City = City.GetById(countryId);
 
             Airports.Add(this);
         }
 
         public override string ToString()
         {
-            return $"{Name}, {Country}";
+            return $"{Name}, {City}({Name})";
         }
 
         static public Airport GetById(int id)
         {
             Airport[] result = Airports.Where(x => x.Id == id).ToArray();
             if (result.Count() == 0)
-                throw new Exception("Город по указаному индексу не найдена");
+                throw new Exception("Аэропорт по указаному индексу не найден");
 
             return result[0];
         }

@@ -46,6 +46,7 @@ namespace PlaneFall.Classes.Users
                     default:
                         throw new Exception("Неизветный тип прав доступа");
                 }
+                _users.Add(tempUser);
             }
         }
         public static void LogIn(string login, string password)
