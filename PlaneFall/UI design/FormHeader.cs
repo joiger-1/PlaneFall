@@ -46,5 +46,10 @@ namespace PlaneFall.UI_design
         {
             _isMoving = false;
         }
+
+        private void btnMinimizate_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
