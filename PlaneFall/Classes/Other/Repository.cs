@@ -58,5 +58,6 @@ namespace PlaneFall.Classes.Other
         {
             Database.Insert("[Books]", new object[] { seat.Item1, seat.Item2, seat.Item3 });
         }
+
     }
 }

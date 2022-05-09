@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PlaneFall.UI_design;
+using PlaneFall.UI_design.Admin;
 
 namespace PlaneFall
 {
@@ -17,7 +18,7 @@ namespace PlaneFall
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormHeader());
+            Application.Run(new FormHeader(new Form1()));
         }
     }
 }

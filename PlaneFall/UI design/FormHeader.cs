@@ -19,6 +19,17 @@ namespace PlaneFall.UI_design
             InitializeComponent();
         }
 
+        public FormHeader(PanelForm form)
+        {
+            InitializeComponent();
+
+            Panel pn = form.GetPanel();
+
+            Size = new Size(Size.Width - (pnContent.Size.Width - pn.Size.Width), Size.Height - (pnContent.Size.Height - pn.Size.Height));
+            pnContent.Size = pn.Size;
+
+            pn.Parent = pnContent;
+        }
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
