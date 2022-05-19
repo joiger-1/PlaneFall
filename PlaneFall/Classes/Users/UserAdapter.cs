@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PlaneFall.Classes.Users
 {
-    interface UserAdapter
+    public interface UserAdapter
     {
         object[] GetInfo();
         void ChangeName(string password, string newName);

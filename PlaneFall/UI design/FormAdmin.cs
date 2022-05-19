@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,8 +10,11 @@ using System.Windows.Forms;
 
 namespace PlaneFall.UI_design
 {
-    public interface PanelForm
+    public partial class FormAdmin : Form
     {
-        Panel GetPanel();
+        public FormAdmin()
+        {
+            InitializeComponent();
+        }
     }
 }

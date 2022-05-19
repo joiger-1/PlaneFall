@@ -25,7 +25,7 @@ namespace PlaneFall.Classes.Users.UserTypes
 
         public object[] GetInfo()
         {
-            return new object[] { _name, _login };
+            return new object[] { _id, _name, _login };
         }
         public void ChangeLogin(string password, string newLogin)
         {

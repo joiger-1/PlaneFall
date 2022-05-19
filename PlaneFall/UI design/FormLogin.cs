@@ -10,15 +10,21 @@ using System.Windows.Forms;
 
 namespace PlaneFall.UI_design
 {
-    public partial class Form1 : Form, PanelForm
+    public partial class FormLogin : Form
     {
-        public Form1()
+        public FormLogin()
         {
             InitializeComponent();
         }
-        public Panel GetPanel()
+
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            return panel1;
+
+        }
+
+        private void lnkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }
